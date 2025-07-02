@@ -1,6 +1,6 @@
 # Apress Source Code
 
-This repository accompanies [*Procedural Content Generation for Games*](https://www.link.springer.com/book/10.1007/979-8-8688-1787-8) by Isabel Lupiani (Apress, 2025).
+This repository accompanies [*Procedural Content Generation for Games*](https://link.springer.com/book/9798868817861) by Isabel Lupiani (Apress, 2025).
 
 [comment]: #cover
 ![Cover image](979-8-8688-1786-1.jpg)
