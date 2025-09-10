@@ -305,7 +305,7 @@ def gen_hybrid_multi_fractal_mesh(context, rows, cols, cell_width, origin, chop_
     
     finish_mesh(context, cell_width, origin, elev_type, chop_border, noise_basis, row_lines, col_lines, num_pts, edges, x, y, z, True)
 
-def gen_bl_fractal_mesh(context, rows, cols, cell_width, origin, elev_type=ElevType.HybridMultiFractal, \
+def gen_bl_fractal_mesh(context, rows, cols, cell_width, origin, elev_type=ElevType.BlenderMultiFractal, \
     chop_border=True, noise_basis='PERLIN_NEW', z_scale=1):
     
     row_lines, col_lines, num_pts, edges, x, y, z = create_blank_height_map(rows, cols, elev_type)
