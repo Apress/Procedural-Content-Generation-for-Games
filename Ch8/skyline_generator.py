@@ -55,8 +55,8 @@ def check_shp_file(shp_filepath: str):
     shp_file, shapes, shp_filename = read_shp_file(shp_filepath)
     plot_shp_file(shp_file.bbox, shapes, shp_filename)
     
-def read_spreadsheet_pandas(xslx_filepath: str):
-    wb = pd.read_excel(xslx_filepath)
+def read_spreadsheet_pandas(xlsx_filepath: str):
+    wb = pd.read_excel(xlsx_filepath)
     print(wb.head())
     
 def calc_perimeter(mesh):
@@ -237,7 +237,8 @@ def gen_skyline(shp_filepath: str, wb_filepath: str, target_len: float, context,
     create_buildings_mesh(context, shp_filename, target_len, shapes, shp_file.bbox, wb, 0.1, elev_scale, \
         roof_h_key, gnd_elev_key, shp_len_key, location, rand_roof_h_range, rand_gnd_elev_range) 
             
-if __name__ == "__main__":    
+if __name__ == "__main__":
+    #read_spreadsheet_pandas(script_dir+"/qgis_battery_park.xlsx")
     start = timeit.default_timer()
     
     gen_skyline(script_dir+"/qgis_battery_park.shp", script_dir+"/qgis_battery_park.xlsx", 100.0, bpy.context, 1, \
